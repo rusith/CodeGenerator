@@ -1,0 +1,18 @@
+﻿<Window x:Class="CodeGenerator.SQL.DropObject"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CodeGenerator.SQL"
+        mc:Ignorable="d"
+        Title="DropObject" Height="335" Width="599.805" Loaded="OnWindowLoaded">
+    <Grid Margin="0,0,0,1">
+        <ComboBox x:Name="TypeComboBox" HorizontalAlignment="Left" Height="22" Margin="54,20,0,0" VerticalAlignment="Top" Width="372" SelectedIndex="0" SelectionChanged="OnTypeChanged"/>
+        <Label x:Name="TypeLabel" Content="type" HorizontalAlignment="Left" Height="31" Margin="10,20,0,0" VerticalAlignment="Top" Width="44"/>
+        <Label x:Name="NameLabel" Content="name" HorizontalAlignment="Left" Height="31" Margin="10,66,0,0" VerticalAlignment="Top" Width="44"/>
+        <TextBox x:Name="NameTextBox" Height="22" Margin="54,69,107,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" TextChanged="OnNameChanged"/>
+        <TextBox x:Name="ResultTextBox" Height="129" Margin="28,117,21,0" Text="" VerticalAlignment="Top" IsReadOnly="True"/>
+        <Button x:Name="CloseButton" Content="Close" Height="28" Margin="0,260,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="77" Click="OnClose"/>
+        <Button x:Name="CopyButton" Content="Copy" Height="28" Margin="0,260,107,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="70" Click="OnCopyClick"/>
+    </Grid>
+</Window>
